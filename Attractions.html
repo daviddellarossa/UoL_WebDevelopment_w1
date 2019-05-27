@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Harry Potter theme park</title>
+        <meta name="description" content="A Harry Potter themed park where you can experience amazing interaction with the magic world of wizardry through Virtual Reality and Augmented Reality" />
+        <meta name="keywords" content="Harry Potter, Theme Park, Wizardry, Magic, Fantasy, Virtual Reality, Augmented Reality" />
+        <meta name="author" content="UoL - Web Development Course - w1" />
+        <meta charset="UTF-8">
+
+    </head>
+    <body>
+        <header>
+            <figure>
+                <img src="" alt="Logo of Harry Potter theme park" />
+                <figcaption>Logo of Harry Potter theme park</figcaption>
+            </figure>
+            <nav>
+                <a href="">Navigation link 1</a>
+                <a href="">Navigation link 2</a>
+                <a href="">Navigation link 3</a>
+                <a href="">Navigation link 4</a>
+                <a href="">Navigation link 5</a>
+                <a href="">Navigation link 6</a>
+                <a href="">Navigation link 7</a>
+                <a href="">Navigation link 8</a>
+            </nav>
+            <div id="searchBar">
+                <input type="text" id="searchText" />
+                <button id="search">Search</button>
+            </div>
+        </header>
+
+
+        <!-- 
+			On our wireframe we have a slide show  of 3 pages that we can switch between them using dots/buttons. Here, the main  tag  containg the 
+			slide show. We code for the side show is based on https://www.w3schools.com/howto/howto_js_slideshow.asp 
+			
+			Each slide has a background image of An attraction type, a header for the name of attraction/Catching Words (Enjoy Our VR Experience) with a paragraph describing a particular part theme park attractions.
+        -->
+
+
+        <main class="slideshow-container" id = "main_slideshow">
+
+                <div class="mySlides fade" id="slide1">
+                    <figure>
+                        <img src="" alt="first picture of the theme park"/>
+                    </figure>
+                    <h1>Lorem ipsum dolor sit amet</h1>
+                    <p>Proin maximus, nisi a dignissim imperdiet, purus augue ullamcorper odio, a ultricies ipsum neque at enim</p>
+                </div>
+
+                <div class="mySlides fade" id="slide2">
+                    <figure>
+                        <img src="" alt="second picture of  the theme park"/>
+                    </figure>
+                    <h1>Lorem ipsum dolor sit amet</h1>
+                    <p class="img_paragrah">Proin maximus, nisi a dignissim imperdiet, purus augue ullamcorper odio, a ultricies ipsum neque at enim</p>
+                </div>
+
+                <div class="mySlides fade" id="slide3">
+                    <figure>
+                        <img src="" alt="third picture of the theme park"/>
+                    </figure>
+                    <h1 >Lorem ipsum dolor sit amet</h1>
+                    <p class="img_paragrah">Proin maximus, nisi a dignissim imperdiet, purus augue ullamcorper odio, a ultricies ipsum neque at enim</p>
+                </div>
+
+                <ul id="slides_dots">
+                    <li class="dot" id="dot1"></li> 
+                    <li class="dot" id="dots2"></li> 
+                    <li class="dot" id="dot3"></li> 
+                </ul>
+        </main>
+        
+        <section class="attractions" id="VR_Attractions">
+            <!-- 6 attractions as per the wireframe -->
+            <h2>VR attractions</h2>
+            <div class="VR_attraction" id="vr1">
+                <figure>
+                    <img src="" alt="image of VR attraction"/>
+                </figure>     
+                <h4>Lorem ipsum dolor sit amet</h4>
+                <p>Proin maximus, nisi a dignissim imperdiet, purus augue ullamcorper odio, a ultricies ipsum neque at enim</p>
+            </div>
+            <div class="VR_attraction" id="vr2">
+                <figure>
+                    <img src="" alt="image of VR attraction"/>
+                </figure>     
+                <h4>Lorem ipsum dolor sit amet</h4>
+                <p>Proin maximus, nisi a dignissim imperdiet, purus augue ullamcorper odio, a ultricies ipsum neque at enim</p>
+            </div>
+            <div class="VR_attraction" id="vr3">
+                <figure>
+                    <img src="" alt="image of VR attraction"/>
+                </figure>     
+                <h4>Lorem ipsum dolor sit amet</h4>
+                <p>Proin maximus, nisi a dignissim imperdiet, purus augue ullamcorper odio, a ultricies ipsum neque at enim</p>
+            </div>
+            <div class="VR_attraction" id="vr4">
+                <figure>
+                    <img src="" alt="image of VR attraction"/>
+                </figure>     
+                <h4>Lorem ipsum dolor sit amet</h4>
+                <p>Proin maximus, nisi a dignissim imperdiet, purus augue ullamcorper odio, a ultricies ipsum neque at enim</p>
+            </div>
+            <div class="VR_attraction" id="vr5">
+                <figure>
+                    <img src="" alt="image of VR attraction"/>
+                </figure>     
+                <h4>Lorem ipsum dolor sit amet</h4>
+                <p>Proin maximus, nisi a dignissim imperdiet, purus augue ullamcorper odio, a ultricies ipsum neque at enim</p>
+            </div>
+            <div class="VR_attraction" id="vr6">
+                <figure>
+                    <img src="" alt="image of VR attraction"/>
+                </figure>     
+                <h4>Lorem ipsum dolor sit amet</h4>
+                <p>Proin maximus, nisi a dignissim imperdiet, purus augue ullamcorper odio, a ultricies ipsum neque at enim</p>
+            </div>
+        </section>
+
+        <section id="Reviews">
+                <h2>What people say</h2>
+                <blockquote id="quote1" class="quote">
+                    <p>YProin maximus, nisi a dignissim imperdiet, purus augue ullamcorper odio, a ultricies ipsum neque at enim</p>
+                    <footer>—author</footer>
+                </blockquote>
+                <blockquote id="quote2" class="quote">
+                    <p>YProin maximus, nisi a dignissim imperdiet, purus augue ullamcorper odio, a ultricies ipsum neque at enim</p>
+                    <footer>—author</footer>
+                </blockquote>
+                <blockquote id="quote3" class="quote">
+                    <p>YProin maximus, nisi a dignissim imperdiet, purus augue ullamcorper odio, a ultricies ipsum neque at enim</p>
+                    <footer>—author</footer>
+                </blockquote>
+        </section>
+
+        <section class="attractions" id="AR_Attractions">
+                <!-- 6 attractions as per the wireframe -->
+               <h2>AR attractions</h2> 
+                <div class="AR_attraction" id="ar1">
+                    <figure>
+                        <img src="" alt="image of 1st AR attraction"/>
+                    </figure>     
+                    <h4>AR attraction Title</h4>
+                    <p>description</p>
+                </div>
+                <div class="AR_attraction" id="ar2">
+                    <figure>
+                        <img src="" alt="image 2nd of AR attraction"/>
+                    </figure>     
+                    <h4>AR attraction Title</h4>
+                    <p>description</p>
+                </div>
+                <div class="AR_attraction" id="ar3">
+                    <figure>
+                        <img src="" alt="image of 3rd AR attraction"/>
+                    </figure>     
+                    <h4>AR attraction Title</h4>
+                    <p>description</p>
+                </div>
+                <div class="AR_attraction" id="ar4">
+                    <figure>
+                        <img src="" alt="image of 4th AR attraction"/>
+                    </figure>     
+                    <h4>AR attraction Title</h4>
+                    <p>description</p>
+                </div>
+                <div class="AR_attraction" id="ar5">
+                    <figure>
+                        <img src="" alt="image of 5th AR attraction"/>
+                    </figure>     
+                    <h4>AR attraction Title</h4>
+                    <p>description</p>
+                </div>
+                <div class="AR_attraction" id="ar6">
+                    <figure>
+                        <img src="" alt="image of 6th AR attraction"/>
+                    </figure>     
+                    <h4>AR attraction Title</h4>
+                    <p>description</p>
+                </div>
+        </section>
+
+        <footer>
+            <nav>
+                <a href="">Navigation link 1</a>
+                <a href="">Navigation link 2</a>
+                <a href="">Navigation link 3</a>
+                <a href="">Navigation link 4</a>
+                <a href="">Navigation link 5</a>
+                <a href="">Navigation link 6</a>
+                <a href="">Navigation link 7</a>
+                <a href="">Navigation link 8</a>
+            </nav>
+            <section id="follow_us">
+                <h5>Follow us:</h5>
+                <nav>
+                    <ul>
+                        <li><a href=""><img src="" alt="Follow us on Facebook" /></a></li>
+                        <li><a href=""><img src="" alt="Follow us on Twitter" /></a></li>
+                        <li><a href=""><img src="" alt="Follow us on Instagram" /></a></li>
+                        <li><a href=""><img src="" alt="Follow us on Youtube" /></a></li>
+                        <li><a href=""><img src="" alt="Follow us on TripAdvisor" /></a></li>                 
+                    </ul>                
+                </nav>
+            </section>
+            <section id="corporate_links">
+                <nav>
+                    <ul>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Terms and Conditions</a></li>
+                        <li><a href="">Work for us</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </footer>
+        <script src=""></script>
+    </body>
+    
+</html>
