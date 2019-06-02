@@ -9,11 +9,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
     <body>
-        <header>
-            <figure>
-                <img src="images/HP_ThemePark_logo.svg" alt="Harry Potter Theme Park Logo"/>
+        <header><!-- The header contains the logo, the main navigation bar and the search bar -->
+            <figure> <!-- The logo -->
+                <a href="index.html">
+                    <img src="images/HP_ThemePark_logo.svg" alt="Harry Potter Theme Park Logo"/>
+                </a>
             </figure>
-            <nav>
+            <nav> <!-- The main navigation bar. All the links to attractions bring to the attraction page, anchored in different places
+                    Note that the "service" links, the last 5, do not land anywhere -->
                 <ul>
                     <li><a href="Attractions.html#sec_platform">Platform 9 3/4 AR experience</a></li>
                     <li><a href="Attractions.html#sec_ministry_of_magic">The Ministry of Magic AR experience</a></li>
@@ -32,19 +35,19 @@
                     <li><a href="#">News</a></li>
                 </ul>
             </nav>
-            <div id="searchBar">
+            <div id="searchBar"> <!-- Search Bar -->
                 <label for="searchText">Search the web site</label>
                 <input type="text" id="searchText" />
                 <button id="search">Search</button>
             </div>
         </header>
-        <main>
+        <main><!-- This block contains the main image and the title of the page -->
             <h1>Contact Us</h1>
             <figure>
                 <img src="images/home_main_3.jpg" width="1920" alt="Owl gliding on a snowy landscape"/>
             </figure>
         </main>
-        <section id="by_post">
+        <section id="by_post"> <!-- This is the Contact us by post section. Now it does not contain a real address, but it would.-->
             <header>
                 <h2>By Post</h2>
             </header>
@@ -53,7 +56,7 @@
             </figure>
             <p>Write us your questions, complaints, compliments at UoL Web Development Team w1</p>
         </section>
-        <section id="by_phone">
+        <section id="by_phone"> <!--Contact us by Phone. Phone number for contacts-->
             <header>
                 <h2>By Phone</h2>
             </header>
@@ -62,7 +65,7 @@
             </figure>
             <p>For urgent queries, you may reach us at +44 (0)123 456 7890 from Monday to Sunday between 8am to 6pm.</p>
         </section>
-        <section id="faq">
+        <section id="faq"> <!--Section containing a link to the FAQ section (not implemented)-->
             <header>
                 <h2>Common Questions</h2>
             </header>
@@ -71,32 +74,32 @@
             </figure>
             <p>Find out if your question has already been answered.</p>
         </section>
-        <section class="contactForm" id="contactForm1">
+        <section id="contactForm"> <!--Form for sending a message. The submission is not managed-->
             <header>
                 <h2>Email Us</h2>
             </header>
             <form id="form_message" action="#">
-                <div>
+                <div id="title">
                     <label for="input_title" lang="en">Title</label>
                     <input id="input_title" type="text" />
                 </div>
-                <div>
+                <div id="forename">
                     <label for="input_forename" lang="en">First Name</label>
                     <input id="input_forename" type="text" required="required" />
                 </div>
-                <div>
+                <div id="lastname">
                     <label for="input_lastname" lang="en">Last Name</label>
                     <input id="input_lastname" type="text" required="required" />
                 </div>
-                <div>
+                <div id="email">
                     <label for="input_email" lang="en">Email</label>
                     <input id="input_email" type="email" required="required" />
                 </div>
-                <div>
+                <div id="phone">
                     <label for="input_phone" lang="en">Phone Number</label>
                     <input id="input_phone" type="tel" required="required" />
                 </div>
-                <div>
+                <div id="subject">
                     <label for="input_subject" lang="en">Subject</label>
                     <select id="input_subject" required="required">
                         <option value="" selected="selected">Select a subject</option>
@@ -107,7 +110,7 @@
                         <option value="feedback">Feedback</option>
                     </select>
                 </div>
-                <div>
+                <div id="message">
                     <label for="input_message" lang="en">Message</label>
                     <textarea id="input_message" required="required" placeholder="Your message here" rows="10" cols="60"></textarea>
                 </div>
@@ -116,8 +119,8 @@
                 </div>
             </form>
         </section>
-        <footer>
-            <nav id="footer_navbar">
+        <footer><!-- footer of the page containing the footer navbar, the Follow us section and other links-->
+            <nav id="footer_navbar"><!-- Secondary navigation bar -->
                 <ul>
                     <li><a href="#">Where we are</a></li>
                     <li><a href="#">How to get here</a></li>
@@ -131,9 +134,9 @@
                     <li><a href="#">Additional needs</a></li>
                 </ul>
             </nav>
-            <section id="follow_us">
+            <section id="follow_us"> <!-- Follow us section-->
                 <h5>Follow us:</h5>
-                <nav>
+                <nav id="follow_us_navbar">
                     <ul>
                         <li><a href="http://www.facebook.com"><img src="images/follow_us_facebook.svg" width="64" height="64" alt="Follow us on Facebook" /></a></li>
                         <li><a href="http://www.twitter.com"><img src="images/follow_us_twitter.svg" height="64" width="64" alt="Follow us on Twitter" /></a></li>
@@ -143,7 +146,7 @@
                     </ul>
                 </nav>
             </section>
-            <nav>
+            <nav id="corporate_links_navbar"> <!-- Tertiary Navigation bar-->
                 <ul>
                     <li><a href="#">Privacy Policy</a></li>
                     <li><a href="#">Terms and Conditions</a></li>
