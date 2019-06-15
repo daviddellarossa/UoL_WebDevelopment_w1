@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed&display=swap');
+
+
+*{
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color:white;
+    
+}
+
+body {
+    background-color: black;
+    /*border: darkorange 1px solid;*/
+}
+input, textarea, select, button{
+    color: orange;
+    font-size: 1.5rem;
+}
+
+p{
+    font-size: 1.2rem;
+}
+
+a{
+    font-size: 1.5rem;
+}
+
+h1{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: orange;
+}
+h2{
+    font-size: 3rem;
+    font-weight: lighter;
+    color: rgb(128,128,128);
+}
+
+h3{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: rgb(128,128,128);
+}
+h4{
+    font-size: 2rem;
+    font-weight: lighter;
+    color: rgb(255,255,255);
+}
+
+h5{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: rgb(255,255,255);
+}
+h6{
+    font-size: 1.5em;
+    font-weight: lighter;
+    color: rgb(255,255,255);
+}
+label{
+    font-weight: bolder;
+    font-size: 1.5rem;
+    color: orange;
+}
+
+/*nav  ul{*/
+/*    list-style-type: none;*/
+/*}*/
+ul {
+    list-style-type: none;
+}
+
+.find_more{
+    display: inline-block;
+    padding: 1rem;
+}
+#tickets_aside
+{
+    /*background-color: #3d1500;*/
+    background-color: #111111;
+    text-align: center;
+    padding: 1rem;
+}
+ .flex_container{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    align-items: stretch;
+    padding:0px;
+    gap:1rem;
+     /*border: wheat 1px solid;*/
+     align-items: center;
+}
+
+#tickets_aside  ul.flex_container > li{
+    flex: 1 1 0;
+    background-color: #7a2b00;
+}
+
+ul.flex_container > li{
+    /*border: yellow 1px solid;*/
+}
+
+footer{
+    background-color: rgb(86, 86, 86);
+    padding-bottom: 2rem;
+}
+
+#navbar {
+    background-color: rgb(0, 42, 78);
+
+}
+
+
+
+.img_background{
+    width:100%;
+}
+
+.bkg_container
+{
+    position: relative;
+    text-align: center;
+}
+
+.centered
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer > *
+{
+    background-color: #444444;
+}
+
