@@ -12,7 +12,7 @@
 body {
     background-color: black;
     width: 100%;
-    /*border: darkorange 1px solid;*/
+    text-align: center;
 }
 input, textarea, select, button{
     color: orange;
@@ -36,14 +36,14 @@ h1{
 h2{
     font-size: 3rem;
     font-weight: lighter;
-    color: rgb(128,128,128);
+    color: rgb(192,192,192);
 }
 
 h3{
     font-family: 'Ubuntu', sans-serif;
     font-size: 3rem;
     text-transform: uppercase;
-    color: rgb(128,128,128);
+    color: orange;
     padding-bottom: 2rem;
 }
 h4{
@@ -69,108 +69,36 @@ label{
     color: orange;
 }
 
-/*nav  ul{*/
-/*    list-style-type: none;*/
-/*}*/
 ul {
     list-style-type: none;
 }
 
-.find_more{
-    display: inline-block;
-    padding: 1rem;
-}
-
- .flex_container{
-    display: flex;
-    justify-content: space-around;
-    flex-flow: row wrap;
-    align-items: stretch;
-    padding:0px;
-    gap:2rem;
-     /*border: wheat 1px solid;*/
-     align-items: center;
-}
-
-
-
-ul.flex_container > li{
-    /*border: yellow 1px solid;*/
-
-}
 
 footer{
     background-color: rgb(86, 86, 86);
-    padding-bottom: 2rem;
 }
-
-#navbar {
-    background-color: rgba(0, 42, 78, 0.5);
-    position: static;
-    top:0px;
-    left: 0px;
-    z-index: 1;
-    width: 100%;
-    height: auto;
-    padding: 1rem;
-}
-
-
-
-.img_background{
-    width:120%;
-    /*border: white 1px solid;*/
-}
-
-.bkg_container
+footer > *
 {
-    position: relative;
-    overflow: hidden;
-    text-align: center;
+    padding: 2rem;
+    background-color: #444444;
 }
 
-.centered
-{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height:auto;
-    min-height: 100%;
-    width: auto;
-    min-width: 100%;
-    text-align: center;
-    padding: 3rem;
-    display: flex;
-    background: rgba(0,0,0,.3);
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /*gap: 5rem;*/
-
-}
 
 /*main*/
 
-main section
+main section /*place the content centered respect to the image*/
 {
     position: absolute;
     top: 60%;
     left: 20%;
     transform: translate( -15%, -50% );
-    text-align: center;
     padding: 3rem;
-    display: flex;
-    background: rgba(0,0,0,.3);
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5rem;
+    /*background-image: linear-gradient( rgba(0,0,0,0.8), rgba(0,0,0,0.6),rgba(0,0,0,0));*/
 }
+
 
 main section h1{
     text-align: center;
-    font-weight: 700;
 }
 main figure
 {
@@ -185,125 +113,160 @@ main figure img
 /*main end*/
 
 /*article_section_1 */
-section#article_section_1
+#article_section_1
 {
-
-    text-align: center;
     padding: 5rem 0rem;
-    display: flex;
     background: rgba(0,0,0,.3);
-    flex-direction: row;
-    gap: 5rem;
 }
-section#article_section_1 article
+#article_section_1 article
 {
     flex-grow: 1
 }
 
-section#article_section_1 figure img
+#article_section_1 figure img
 {
     width: 100%;
 }
 
-section#article_section_1 article div
+#article_section_1 article div
 {
     position: absolute;
     top: 50%;
     left: 20%;
     transform: translate( -15%, -50% );
-    text-align: center;
     padding: 3rem;
-    display: flex;
-    background: rgba(0,0,0,.5);
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5rem;
+    /*background: rgba(0,0,0,.5);*/
+
 }
 /*article_section_1 end*/
 
 /*tickets_aside*/
 #tickets_aside
 {
-    text-align: center;
     padding-bottom: 5rem;
 }
 
 #tickets_aside  ul
 {
-    display: flex;
-    justify-content: space-around;
-    flex-flow: row wrap;
-    align-items: stretch;
-    padding:0rem;
+    padding:0rem; /*get rid of the space on the left*/
+
     gap:2rem;
+    /*align-items: stretch; !*make all blocks same height*!*/
 }
 
 #tickets_aside  ul > li{
     flex: 1 1 0;
     background-color: #7a2b00;
-    padding: 1rem;
+    padding: 2rem;
+    gap:2rem;
 }
 #tickets_aside  ul > li > h5 {
-    padding-bottom: 2rem;
+    /*padding-bottom: 2rem;*/
 }
 
 /*tickets_aside end*/
 
 /*article_section_2*/
 
-section#article_section_2
+#article_section_2
 {
-
-    text-align: center;
-    padding-bottom: 5rem;
-    display: flex;
     background: rgba(0,0,0,.3);
-    flex-flow: row wrap;
-    gap: 5rem;
+    padding-bottom: 5rem;
+
 }
-section#article_section_2 article
+#article_section_2 article
 {
     flex: 27%;
 }
-section#article_section_2 figure img
+#article_section_2 figure img
 {
     width: 100%;
 }
-section#article_section_2 article div
+#article_section_2 article div
 {
     font-size: 0.5rem;
     position: absolute;
     top: 50%;
     left: 20%;
     transform: translate( -15%, -50% );
-    text-align: center;
     padding: 1rem;
-    display: flex;
-    background: rgba(0,0,0,.5);
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /*background: rgba(0,0,0,.5);*/
+
     gap: 1rem;
 }
 /*article_section_2*/
 
-section#aside_section{
-    text-align: center;
+#aside_section{
     padding-bottom: 5rem;
-    display: flex;
     background: rgba(0,0,0,.3);
+}
+#aside_section aside{
+    flex-grow: 1
+}
+
+#aside_section aside div
+{
+    font-size: 0.5rem;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate( -15%, -50% );
+    padding: 1rem;
+    gap:1rem;
+
+}
+#aside_section aside figure img
+{
+    width: 100%;
+}
+
+#navbar {
+    background-color: rgba(0, 42, 78, 0.5);
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+}
+
+.bkg_container
+{
+    position: relative;
+    overflow: hidden;
+}
+
+.find_more{
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    /*border: white 1px solid;*/
+    background-color: darkorange;
+    opacity: 0.8%;
+}
+
+.flex_row
+{
+    display: flex;
     flex-flow: row wrap;
     justify-content:center;
     gap: 5rem;
 }
-section#aside_section aside{
-    background-color: #444444;
-    padding: 3rem;
-}
 
-footer > *
+.flex_column
 {
-    background-color: #444444;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
 }
 
+.flex_navbars{
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap:2rem;
+}
+
+.gradient_bkg{
+    background-image: linear-gradient( rgba(0,0,0,0.8), rgba(0,0,0,0.6),rgba(0,0,0,0));
+}
