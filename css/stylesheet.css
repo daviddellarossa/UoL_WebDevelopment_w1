@@ -5,11 +5,13 @@
 *{
     font-family: 'Ubuntu Condensed', sans-serif;
     color:white;
-    
+    box-sizing: border-box;
+    margin: 0px;
 }
 
 body {
     background-color: black;
+    width: 100%;
     /*border: darkorange 1px solid;*/
 }
 input, textarea, select, button{
@@ -42,6 +44,7 @@ h3{
     font-size: 3rem;
     text-transform: uppercase;
     color: rgb(128,128,128);
+    padding-bottom: 2rem;
 }
 h4{
     font-size: 2rem;
@@ -77,31 +80,23 @@ ul {
     display: inline-block;
     padding: 1rem;
 }
-#tickets_aside
-{
-    /*background-color: #3d1500;*/
-    background-color: #111111;
-    text-align: center;
-    padding: 1rem;
-}
+
  .flex_container{
     display: flex;
     justify-content: space-around;
     flex-flow: row wrap;
     align-items: stretch;
     padding:0px;
-    gap:1rem;
+    gap:2rem;
      /*border: wheat 1px solid;*/
      align-items: center;
 }
 
-#tickets_aside  ul.flex_container > li{
-    flex: 1 1 0;
-    background-color: #7a2b00;
-}
+
 
 ul.flex_container > li{
     /*border: yellow 1px solid;*/
+
 }
 
 footer{
@@ -110,19 +105,27 @@ footer{
 }
 
 #navbar {
-    background-color: rgb(0, 42, 78);
-
+    background-color: rgba(0, 42, 78, 0.5);
+    position: static;
+    top:0px;
+    left: 0px;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
 }
 
 
 
 .img_background{
-    width:100%;
+    width:120%;
+    /*border: white 1px solid;*/
 }
 
 .bkg_container
 {
     position: relative;
+    overflow: hidden;
     text-align: center;
 }
 
@@ -132,6 +135,171 @@ footer{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    height:auto;
+    min-height: 100%;
+    width: auto;
+    min-width: 100%;
+    text-align: center;
+    padding: 3rem;
+    display: flex;
+    background: rgba(0,0,0,.3);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*gap: 5rem;*/
+
+}
+
+/*main*/
+
+main section
+{
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    transform: translate( -15%, -50% );
+    text-align: center;
+    padding: 3rem;
+    display: flex;
+    background: rgba(0,0,0,.3);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+main section h1{
+    text-align: center;
+    font-weight: 700;
+}
+main figure
+{
+    overflow: hidden;
+}
+main figure img
+{
+    height: 100%;
+    width: 100%;
+}
+
+/*main end*/
+
+/*article_section_1 */
+section#article_section_1
+{
+
+    text-align: center;
+    padding: 5rem 0rem;
+    display: flex;
+    background: rgba(0,0,0,.3);
+    flex-direction: row;
+    gap: 5rem;
+}
+section#article_section_1 article
+{
+    flex-grow: 1
+}
+
+section#article_section_1 figure img
+{
+    width: 100%;
+}
+
+section#article_section_1 article div
+{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate( -15%, -50% );
+    text-align: center;
+    padding: 3rem;
+    display: flex;
+    background: rgba(0,0,0,.5);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+/*article_section_1 end*/
+
+/*tickets_aside*/
+#tickets_aside
+{
+    text-align: center;
+    padding-bottom: 5rem;
+}
+
+#tickets_aside  ul
+{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    align-items: stretch;
+    padding:0rem;
+    gap:2rem;
+}
+
+#tickets_aside  ul > li{
+    flex: 1 1 0;
+    background-color: #7a2b00;
+    padding: 1rem;
+}
+#tickets_aside  ul > li > h5 {
+    padding-bottom: 2rem;
+}
+
+/*tickets_aside end*/
+
+/*article_section_2*/
+
+section#article_section_2
+{
+
+    text-align: center;
+    padding-bottom: 5rem;
+    display: flex;
+    background: rgba(0,0,0,.3);
+    flex-flow: row wrap;
+    gap: 5rem;
+}
+section#article_section_2 article
+{
+    flex: 27%;
+}
+section#article_section_2 figure img
+{
+    width: 100%;
+}
+section#article_section_2 article div
+{
+    font-size: 0.5rem;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate( -15%, -50% );
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    background: rgba(0,0,0,.5);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+/*article_section_2*/
+
+section#aside_section{
+    text-align: center;
+    padding-bottom: 5rem;
+    display: flex;
+    background: rgba(0,0,0,.3);
+    flex-flow: row wrap;
+    justify-content:center;
+    gap: 5rem;
+}
+section#aside_section aside{
+    background-color: #444444;
+    padding: 3rem;
 }
 
 footer > *
