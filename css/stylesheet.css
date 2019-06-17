@@ -13,48 +13,49 @@ body {
     background-color: black;
     width: 100%;
     text-align: center;
+    /*gap: 5em;*/
 }
 input, textarea, select, button{
     color: orange;
-    font-size: 1.5rem;
+    font-size: 1.5em;
 }
 
 p{
-    font-size: 1.2rem;
+    font-size: 1.2em;
 }
 
 a{
-    font-size: 1.5rem;
+    font-size: 1.5em;
 }
 
 h1{
     font-family: 'Ubuntu', sans-serif;
-    font-size: 4rem;
+    font-size: 4em;
     text-transform: uppercase;
     color: orange;
 }
 h2{
-    font-size: 3rem;
+    font-size: 3em;
     font-weight: lighter;
     color: rgb(192,192,192);
 }
 
 h3{
     font-family: 'Ubuntu', sans-serif;
-    font-size: 2.5rem;
+    font-size: 3em;
     text-transform: uppercase;
     color: orange;
-    padding-bottom: 2rem;
+    /*padding-bottom: 1em;*/
 }
 h4{
-    font-size: 2rem;
+    font-size: 2em;
     font-weight: lighter;
     color: rgb(255,255,255);
 }
 
 h5{
     font-family: 'Ubuntu', sans-serif;
-    font-size: 2rem;
+    font-size: 2em;
     text-transform: uppercase;
     color: rgb(255,255,255);
 }
@@ -65,7 +66,7 @@ h6{
 }
 label{
     font-weight: bolder;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     color: orange;
 }
 
@@ -76,23 +77,29 @@ ul {
 
 footer{
     background-color: rgb(86, 86, 86);
+    width:100%;
 }
 footer > *
 {
-    padding: 2rem;
+    padding: 2em;
     background-color: #444444;
 }
 
 
 /*main*/
+main{
+    padding-bottom: 5em;
+}
 
 main section /*place the content centered respect to the image*/
 {
     position: absolute;
     top: 60%;
-    left: 20%;
-    transform: translate( -15%, -50% );
-    padding: 3rem;
+    left: 50%;
+    width: 80%;
+    transform: translate( -50%, -50% );
+    padding: 3em;
+    gap: 5em;
     /*background-image: linear-gradient( rgba(0,0,0,0.8), rgba(0,0,0,0.6),rgba(0,0,0,0));*/
 }
 
@@ -115,53 +122,57 @@ main figure img
 /*article_section_1 */
 #article_section_1
 {
-    padding: 5rem 0rem;
+    padding-bottom: 5em;
     background: rgba(0,0,0,.3);
 }
 #article_section_1 article
 {
-    flex-grow: 1
+    flex: 1 1 0;
+
 }
 
 #article_section_1 figure img
 {
     width: 100%;
+    /*max-width: 800px;*/
+    /*min-width: 400px;*/
 }
 
 #article_section_1 article div
 {
     position: absolute;
     top: 50%;
-    left: 20%;
-    transform: translate( -15%, -50% );
-    padding: 3rem;
-    /*background: rgba(0,0,0,.5);*/
-
+    left: 50%;
+    width: 80%;
+    transform: translate( -50%, -50% );
+    overflow: auto;
+    /*padding: 3em;*/
+    gap:3em;
 }
 /*article_section_1 end*/
 
 /*tickets_aside*/
 #tickets_aside
 {
-    padding-bottom: 5rem;
+    padding-bottom: 5em;
 }
 
 #tickets_aside  ul
 {
-    padding:0rem; /*get rid of the space on the left*/
-
-    gap:2rem;
-    /*align-items: stretch; !*make all blocks same height*!*/
+    padding:0em; /*get rid of the space on the left*/
+    gap:2em;
 }
 
 #tickets_aside  ul > li{
-    flex: 1 1 0;
+    /*flex: 1 1 0;*/
+    flex: 250px;
     background-color: #7a2b00;
-    padding: 2rem;
-    gap:2rem;
+    padding: 2em;
+    gap:2em;
 }
+
 #tickets_aside  ul > li > h5 {
-    /*padding-bottom: 2rem;*/
+    /*padding-bottom: 2em;*/
 }
 
 /*tickets_aside end*/
@@ -171,12 +182,13 @@ main figure img
 #article_section_2
 {
     background: rgba(0,0,0,.3);
-    padding-bottom: 5rem;
-
+    padding-bottom: 5em;
 }
 #article_section_2 article
 {
-    flex: 27%;
+    /*flex: 27%;*/
+    flex: 1 0 500px;
+
 }
 #article_section_2 figure img
 {
@@ -184,34 +196,38 @@ main figure img
 }
 #article_section_2 article div
 {
-    font-size: 0.5rem;
+    font-size: 0.75em;
     position: absolute;
     top: 50%;
-    left: 20%;
-    transform: translate( -15%, -50% );
-    padding: 1rem;
+    left: 50%;
+    width: 80%;
+    transform: translate( -50%, -50% );
+    padding: 1em;
 
-    gap: 1rem;
+    gap: 2em;
 }
 /*article_section_2*/
 
 #aside_section{
-    padding-bottom: 5rem;
+    padding-bottom: 5em;
     background: rgba(0,0,0,.3);
+    width: 100%;
 }
 #aside_section aside{
-    flex-grow: 1
+    flex: 1 1 500px;
+
 }
 
 #aside_section aside div
 {
-    font-size: 0.5rem;
+    font-size: 0.75em;
     position: absolute;
     top: 50%;
-    left: 20%;
-    transform: translate( -15%, -50% );
-    padding: 1rem;
-    gap:1rem;
+    left: 50%;
+    width: 80%;
+    transform: translate( -50%, -50% );
+    padding: 1em;
+    gap:2em;
 
 }
 #aside_section figure img
@@ -223,7 +239,7 @@ main figure img
     background-color: rgba(0, 42, 78, 0.5);
     width: 100%;
     height: auto;
-    padding: 2rem;
+    padding: 2em;
 }
 
 .bkg_container
@@ -234,8 +250,7 @@ main figure img
 
 .find_more{
     display: inline-block;
-    padding: 0.8rem 2rem;
-    /*border: white 1px solid;*/
+    padding: 0.8em 2em;
     background-color: darkorange;
     opacity: 0.8%;
 }
@@ -245,16 +260,17 @@ main figure img
     display: flex;
     flex-flow: row wrap;
     justify-content:center;
-    gap: 5rem;
+    gap: 5em;
 }
 
 .flex_column
 {
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
+    /*flex-flow: column wrap;*/
     justify-content: center;
     align-items: center;
-    gap: 5rem;
+    /*gap: 5em;*/
 }
 
 .flex_navbars{
@@ -263,9 +279,77 @@ main figure img
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
-    gap:2rem;
+    gap:2em;
 }
 
 .gradient_bkg{
     background-image: linear-gradient( rgba(0,0,0,0.8), rgba(0,0,0,0.6),rgba(0,0,0,0));
 }
+
+@media screen and (max-width: 1600px)
+{
+    body{
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 1200px)
+{
+    body{
+        font-size: 0.625em;
+    }
+
+}
+
+@media screen and (max-width: 600px)
+{
+    body{
+        font-size: 0.3em;
+    }
+
+    #tickets_aside{
+        display: none;
+    }
+
+    #follow_us_navbar ul li:first-child{
+        display: none;
+    }
+    #follow_us_navbar img{
+        width: 32px;
+        height:32px;
+    }
+
+}
+
+@media screen and (max-width: 400px){
+
+}
+
+@media screen and (max-width: 820px){
+
+    body{
+        font-size: 0.427em;
+    }
+    #tickets_aside  ul > li{
+        flex: 250px;
+    }
+
+    #article_section_1 article
+    {
+        flex: 800px;
+
+    }
+    #aside_section aside{
+        flex: 800px;
+    }
+    #article_section_2 article
+    {
+        flex: 800px;
+    }
+    #follow_us_navbar img{
+        width: 48px;
+        height:48px;
+    }
+}
+
+
