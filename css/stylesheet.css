@@ -242,6 +242,19 @@ main figure img
     padding: 2em;
 }
 
+#navbar > label{
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    text-align: center;
+    display: none;
+}
+
+#toggle { display: none; }
+
+#toggle:checked + #nav{
+    display: block;
+}
+
 .bkg_container
 {
     position: relative;
@@ -301,31 +314,8 @@ main figure img
 
 }
 
-@media screen and (max-width: 600px)
+@media screen and (max-width: 820px)
 {
-    body{
-        font-size: 0.3em;
-    }
-
-    #tickets_aside{
-        display: none;
-    }
-
-    #follow_us_navbar ul li:first-child{
-        display: none;
-    }
-    #follow_us_navbar img{
-        width: 32px;
-        height:32px;
-    }
-
-}
-
-@media screen and (max-width: 400px){
-
-}
-
-@media screen and (max-width: 820px){
 
     body{
         font-size: 0.427em;
@@ -350,6 +340,75 @@ main figure img
         width: 48px;
         height:48px;
     }
+
+    #navbar nav{
+        display: none;
+    }
+
+    #navbar > label{
+        display: block;
+        cursor: pointer;
+        font-size:28px;
+        color: white;
+        float:right;
+        margin-right: 20px;
+        position: relative;
+    }
+    #toggle:checked + nav{
+        display: block;
+        font-size: 2em;
+    }
+
+    .flex_navbars li{
+        line-height: 2em;
+    }
+
+    #searchBar {
+        display: none;
+    }
+
+    #footer_navbar, #corporate_links_navbar ul{
+        display: block;
+    }
+
 }
 
+@media screen and (max-width: 600px)
+{
+    body{
+        font-size: 0.4em;
+    }
 
+    main{
+        font-size: 0.9em;
+    }
+
+    footer{
+        font-size: 1.5em;
+    }
+
+    .flex_navbars li{
+        line-height: 3em;
+    }
+
+    #tickets_aside{
+        display: none;
+    }
+
+    #follow_us_navbar ul li:first-child{
+        display: none;
+    }
+    #follow_us_navbar img{
+        width: 32px;
+        height:32px;
+    }
+
+}
+
+@media screen and (max-width: 400px){
+
+    #follow_us_navbar img{
+        width: 24px;
+        height:24px;
+    }
+}

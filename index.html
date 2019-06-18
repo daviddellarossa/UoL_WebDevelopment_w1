@@ -11,7 +11,9 @@
     </head>
     <body class="flex_column">
         <header id="navbar"><!-- The header contains the logo, the main navigation bar and the search bar -->
-            <nav  class="flex_navbars"><!-- The main navigation bar. All the links to attractions bring to the attraction page, anchored in different places
+            <label for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle" />
+            <nav class="flex_navbars"><!-- The main navigation bar. All the links to attractions bring to the attraction page, anchored in different places
                     Note that the "service" links, the last 5, do not land anywhere -->
                 <figure><!-- The logo -->
                     <a href="index.html">
@@ -41,7 +43,7 @@
                     <li><a href="not_found.html">News</a></li>
                 </ul>
                 <div id="searchBar"><!-- Search Bar -->
-                    <label for="searchText" >Search the web site</label>
+                    <label for="searchText" >Search the website</label>
                     <input type="text" id="searchText" />
                     <button id="search">Search</button>
                 </div>
