@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Harry Potter theme park</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="A Harry Potter themed park where you can experience amazing interaction with the magic world of wizardry through Virtual Reality and Augmented Reality" />
+        <meta name="keywords" content="Harry Potter, Theme Park, Wizardry, Magic, Fantasy, Virtual Reality, Augmented Reality" />
+        <meta name="author" content="UoL - Web Development Course - w1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/stylesheet.css">
+    </head>
+    <body class="flex_column">
+        <header id="navbar"><!-- The header contains the logo, the main navigation bar and the search bar -->
+            <label for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle" />
+            <nav class="flex_navbars"><!-- The main navigation bar. All the links to attractions bring to the attraction page, anchored in different places
+                    Note that the "service" links, the last 5, do not land anywhere -->
+                <figure><!-- The logo -->
+                    <a href="index.html">
+                        <img src="images/HP_ThemePark_logo.png" alt="Harry Potter Theme Park Logo"/>
+
+                    </a>
+                </figure>
+                <ul>
+                    <li><a href="Attractions.html#sec_platform">Platform 9 3/4 AR experience</a></li>
+                    <li><a href="Attractions.html#sec_ministry_of_magic">The Ministry of Magic AR experience</a></li>
+                    <li><a href="Attractions.html#sec_forbidden_forest">The Forbidden Forest AR experience</a></li>
+                    <li><a href="Attractions.html#sec_visit_hogwarts">Visit Hogwarts School AR experience</a></li>
+                    <li><a href="Attractions.html#sec_diagon_alley">A walk in Diagon Alley AR experience</a></li>
+                    <li><a href="Attractions.html#sec_magical_creatures_exhibition">Magical creatures exhibition AR experience</a></li>
+                </ul>
+                <ul>
+                    <li><a href="Attractions.html#sec_ride_a_broomstick">Ride a Broomstick VR experience</a></li>
+                    <li><a href="Attractions.html#sec_quidditch_match">Play Quidditch VR experience</a></li>
+                    <li><a href="Attractions.html#sec_visit_gringott">Visit Gringott's cave VR experience</a></li>
+                    <li><a href="Attractions.html#sec_find_the_horcruxes">Find the Horcruxes VR game</a></li>
+                </ul>
+                <ul>
+                    <li><a href="not_found.html">Plan your vacation</a></li>
+                    <li><a href="not_found.html">Stay the night</a></li>
+                    <li><a href="not_found.html">Tickets</a></li>
+                    <li><a href="not_found.html">Reservations</a></li>
+                    <li><a href="not_found.html">News</a></li>
+                </ul>
+                <div id="searchBar"><!-- Search Bar -->
+                    <label for="searchText" >Search the website</label>
+                    <input type="text" id="searchText" />
+                    <button id="search">Search</button>
+                </div>
+            </nav>
+
+        </header>
+        <main class="bkg_container"><!-- This block contains the main image and the title of the page -->
+            <figure>
+                <img src="images/home_main.jpg" alt="Photo of Harry, Hermione, Ron and Professor Dumbledore" />
+            </figure>
+            <section class="flex_column gradient_bkg">
+                <h1>Enter the magic world of Harry Potter</h1>
+                <h2>Immerse yourself in the magic and, through Augmented and Virtual Reality, live the most unforgettable experience you've ever had</h2>
+                <div id="buy_tickets"  class="find_more"><!--This section would be a link to the Tickets page-->
+                    <h2>Tickets</h2>
+                    <a href="not_found.html">You'd better purchase in advance</a>
+                </div>
+            </section>
+
+        </main>
+        
+        <div id="article_section_1" class="flex_row">
+            <article id="sec_ar_hogwarts_school" class="bkg_container" ><!-- This section adverts one of the attractions of the theme park-->
+                <figure>
+                    <img src="images/hogwarts_castle.jpg" alt="People in Hogwarts castle enjoying virtual reality attractions"/>
+                </figure>
+                <div class="flex_column gradient_bkg">
+                    <header>
+                        <h3>Visit Hogwarts school</h3>
+                    </header>
+                    <h4>Experience Hogwarts in Augmented Reality like you really were in the movie</h4>
+                    <a href="Attractions.html" class="find_more">Find out more</a>
+                </div>
+            </article>
+            <article id="sec_vr_gringotts_cave"  class="bkg_container"><!-- This section adverts one of the attractions of the theme park-->
+                <figure>
+                    <img src="images/gringotts_1.jpg" alt="Interiors of Gringott's bank and Griphook the Goblin"/>
+                </figure>
+                <div class="flex_column gradient_bkg">
+                    <header>
+                        <h3>Visit Gringott's cave</h3>
+                    </header>
+                    <h4>Enter the sinister twine of tunnels under Gringott's and stare at wonders you've never seen before. All in Virtual Reality</h4>
+                    <a href="Attractions.html" class="find_more">Find out more</a>
+                </div>
+            </article>
+        </div>
+
+        <aside id="tickets_aside"><!-- This section describes the options available for tickets. They would send to the Tickets page for details-->
+            <header>
+                <h3>Tickets</h3>
+            </header>
+            <ul class="flex_row">
+                <li id="adults" class="flex_column">
+                    <h5>Adults</h5>
+                    <a href="not_found.html">Purchase now</a>
+                    <h6>16+ years</h6>
+
+                </li>
+                <li id="0-6_years" class="flex_column">
+                    <h5>0-6 years</h5>
+                    <a href="not_found.html">Purchase now</a>
+                    <h6>Accompanied by an adult</h6>
+
+                </li>
+                <li id="kids" class="flex_column">
+                    <h5>Kids</h5>
+                    <a href="not_found.html">Purchase now</a><h6>6-15 years, accompanied by an adult</h6>
+
+                </li>
+                <li id="family" class="flex_column">
+                    <h5>Family</h5>
+                    <a href="not_found.html">Purchase now</a><h6>2 adults and 2 children </h6>
+
+                </li>
+                <li id="carer" class="flex_column">
+                    <h5>Carer</h5>
+                    <a href="not_found.html">Purchase now</a><h6>Contact our Customer Services Team</h6>
+
+                </li>
+                <li id="groups" class="flex_column">
+                    <h5>Groups</h5>
+                    <a href="not_found.html">Purchase now</a>
+                    <h6>Contact our Customer Services Team</h6>
+                </li>
+            </ul>
+        </aside>
+        <div id="article_section_2" class="flex_row">
+            <article id="sec_vr_ride_a_broomstick" class="bkg_container"><!-- This section adverts one of the attractions of the theme park-->
+                <figure>
+                    <img src="images/broomstick-hp.jpg" alt="A person enjoying the experience of riding a broomstick in virtual reality"/>
+                </figure>
+                <div class="flex_column gradient_bkg">
+                    <header>
+                        <h3>Ride a broomstick</h3>
+                    </header>
+                    <h4>Try the breakneck experience of riding a broomstick in Virtual Reality</h4>
+                    <a href="Attractions.html" class="find_more">Find out more</a>
+                </div>
+
+            </article>
+            <article id="sec_ar_forbidden_forest" class="bkg_container"><!-- This section adverts one of the attractions of the theme park-->
+                <figure>
+                    <img src="images/forbidden_forest.jpg" alt="Harry, Hermione and Ron running in the Forbidden Forest"/>
+                </figure>
+                <div class="flex_column gradient_bkg">
+                    <header>
+                        <h3>The forbidden forest</h3>
+                    </header>
+                    <h4>Venture deep into the Forbidden Forest in Augmented Reality</h4>
+                    <a href="Attractions.html" class="find_more">Find out more</a>
+                </div>
+            </article>
+            <article id="sec_vr_quidditch_match" class="bkg_container"><!-- This section adverts one of the attractions of the theme park-->
+                <figure>
+                    <img src="images/broomstick.jpg" alt="Harry Potter riding a broomstick in a Quidditch match"/>
+                </figure>
+                <div class="flex_column gradient_bkg">
+                    <header>
+                        <h3>Play a Quidditch match</h3>
+                    </header>
+                    <h4>Join an incredibly real Quidditch match in Virtual Reality</h4>
+                    <a href="Attractions.html" class="find_more">Find out more</a>
+                </div>
+            </article>
+            <article id="sec_ar_diagon_alley" class="bkg_container"><!-- This section adverts one of the attractions of the theme park-->
+                <figure>
+                    <img src="images/diagon_alley.jpg" alt="Picture of Diagon Alley by night"/>
+                </figure>
+                <div class="flex_column gradient_bkg">
+                    <header>
+                        <h3>Have a walk in Diagon Alley</h3>
+                    </header>
+                    <h4>Admire the magic of Diagon Alley, with the unique realism of Augmented Reality</h4>
+                    <a href="Attractions.html" class="find_more">Find out more</a>
+                </div>
+            </article>
+            <article id="sec_vr_find_the_horcruxes" class="bkg_container"><!-- This section adverts one of the attractions of the theme park-->
+                <figure>
+                    <img src="images/horcruxes.jpg" alt="Characters of Harry Potter after the Horcruxes"/>
+                </figure>
+                <div class="flex_column gradient_bkg">
+                    <header>
+                        <h3>Find the Horcruxes</h3>
+                    </header>
+                    <h4>Play this exciting game in Virtual Reality and find the Horcruxes, if you can</h4>
+                    <a href="Attractions.html" class="find_more">Find out more</a>
+                </div>
+            </article>
+            <article id="sec_ar_magical_creatures" class="bkg_container"><!-- This section adverts one of the attractions of the theme park-->
+                <figure>
+                    <img src="images/centaur.jpg" alt="Picture of a Centaur"/>
+                </figure>
+                <div class="flex_column gradient_bkg">
+                    <header>
+                        <h3>Magical creatures</h3>
+                    </header>
+                    <h4>Don't miss this thrilling exhibition of magical creatures in Augmented Reality</h4>
+                    <a href="Attractions.html" class="find_more" >Find out more</a>
+                </div>
+            </article>
+
+        </div>
+        <div id="aside_section" class="flex_row">
+            <aside id="plan_your_vacation" class="bkg_container"><!--This section would send to a page where users can plan their long stay in the park -->
+                <figure>
+                    <img src="images/plan_your_vacation.jpg" alt="Picture of a sunset"/>
+                </figure>
+                <div class="flex_column gradient_bkg">
+                    <h3>Plan your vacation</h3>
+                    <h4>Find all you need to plan a long stay in the park, flights, hotels, restaurants</h4>
+                    <a href="not_found.html" class="find_more">Find out more</a>
+                </div>
+            </aside>
+            <aside id="newsletter" class="bkg_container"><!--This section would send to the newsletter-->
+                <figure>
+                    <img src="images/newsletter.jpg" alt="Picture of a library"/>
+                </figure>
+                <div class="flex_column gradient_bkg">
+                    <h3>Newsletter</h3>
+                    <h4>Be always up-to-date at what's up in Harry Potter virtual world</h4>
+                    <a href="not_found.html" class="find_more">Find out more</a>
+                </div>
+            </aside>
+        </div>
+        <footer><!-- footer of the page containing the footer navbar, the Follow us section and other links-->
+            <nav id="footer_navbar" class="flex_navbars"><!-- Secondary navigation bar -->
+                <ul class="">
+                    <li><a href="not_found.html">Where we are</a></li>
+                    <li><a href="not_found.html">How to get here</a></li>
+                    <li><a href="not_found.html">Opening times</a></li>
+                </ul>
+                <ul class="">
+                    <li><a href="not_found.html">When you arrive</a></li>
+                    <li><a href="not_found.html">Facilities</a></li>
+                    <li><a href="not_found.html">FAQ</a></li>
+                </ul>
+                <ul class="">
+                    <li><a href="contactUs.html">Contact us</a></li>
+                    <li><a href="not_found.html">Partnership (Schools)</a></li>
+                    <li><a href="not_found.html">Private events</a></li>
+                    <li><a href="not_found.html">Additional needs</a></li>
+                </ul>
+            </nav>
+            <div id="follow_us"> <!-- Follow us section-->
+
+                <nav id="follow_us_navbar">
+                    <ul class="flex_navbars">
+                        <li><h5>Follow us:</h5></li>
+                        <li><a href="http://www.facebook.com"><img src="images/follow_us_facebook.svg" width="64px" height="64px" alt="Follow us on Facebook" /></a></li>
+                        <li><a href="http://www.twitter.com"><img src="images/follow_us_twitter.svg" height="64px" width="64px" alt="Follow us on Twitter" /></a></li>
+                        <li><a href="http://www.instagram.com"><img src="images/follow_us_instagram.svg" height="64px" width="64px" alt="Follow us on Instagram" /></a></li>
+                        <li><a href="http://www.youtube.com"><img src="images/follow_us_youtube.svg" height="64px" width="64px" alt="Follow us on Youtube" /></a></li>
+                        <li><a href="http://www.instagram.com"><img src="images/follow_us_tripadvisor.svg" height="64px" width="64px" alt="Follow us on TripAdvisor" /></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <nav id="corporate_links_navbar"><!-- Tertiary Navigation bar-->
+                <ul class="flex_navbars">
+                    <li><a href="not_found.html">Privacy Policy</a></li>
+                    <li><a href="not_found.html">Terms and Conditions</a></li>
+                    <li><a href="not_found.html">Work for us</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+</html>
