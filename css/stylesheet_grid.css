@@ -1,6 +1,44 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed&display=swap');
 
+#fig_logo{ grid-area: mn_logo; }
+#main_navbar_ar { grid-area: mn_ar; }
+#main_navbar_vr {grid-area: mn_vr; }
+#main_navbar_other { grid-area: mn_other; }
+#searchBar { grid-area: mn_search; }
+
+#main_navbar { grid-area: navbar}
+#main_section { grid-area: main; }
+#sec_ar_hogwarts_school { grid-area: art_1; }
+#sec_vr_gringotts_cave { grid-area: art_2; }
+#tickets_aside { grid-area: tkt; }
+#sec_vr_ride_a_broomstick { grid-area: art_3; }
+#sec_ar_forbidden_forest { grid-area: art_4; }
+#sec_vr_quidditch_match { grid-area: art_5; }
+#sec_ar_diagon_alley { grid-area: art_6; }
+#sec_vr_find_the_horcruxes { grid-area: art_7; }
+#sec_ar_magical_creatures { grid-area: art_8; }
+#plan_your_vacation { grid-area: aside_1; }
+#newsletter { grid-area: aside_2; }
+#footer {grid-area: footer}
+
+/*tickets*/
+#adults { grid-area: adults; }
+#0-6_years { grid-area: years0-6; }
+#kids { grid-area: kids; }
+#family { grid-area: family; }
+#carer { grid-area: carer; }
+#groups { grid-area: groups; }
+
+/*footer*/
+#fnb_1st { grid-area: fnb_1st; }
+#fnb_2nd { grid-area: fnb_2nd; }
+#fnb_3rd { grid-area: fnb_3rd; }
+#fnb_followus { grid-area: fnb_fus; }
+#fnb_corp { grid-area: fnb_crp; }
+
+
+
 *{
     font-family: 'Ubuntu Condensed', sans-serif;
     color:white;
@@ -11,9 +49,7 @@
 
 body {
     background-color: black;
-
     text-align: center;
-    /*font-size: 2em;*/
 }
 
 input, textarea, select, button{
@@ -23,40 +59,34 @@ input, textarea, select, button{
 
 p{
     font-size: 1.2em;
-    /*font-size: smaller;*/
 }
 
 a{
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 h1{
     font-family: 'Ubuntu', sans-serif;
     font-size: 2.8em;
-    /*font-size: larger;*/
     text-transform: uppercase;
     color: orange;
 }
 
 h2{
     font-size: 2em;
-    /*font-size: x-large;*/
     font-weight: lighter;
-    /*color: rgb(192,192,192);*/
     color: rgb(224,224,224);
 }
 
 h3{
     font-family: 'Ubuntu', sans-serif;
     font-size: 2em;
-    /*font-size: x-large;*/
     text-transform: uppercase;
     color: orange;
     padding-bottom: 1em;
 }
 h4{
     font-size: 1.5em;
-    /*font-size: larger;*/
     font-weight: lighter;
     color: rgb(255,255,255);
 }
@@ -64,7 +94,6 @@ h4{
 h5{
     font-family: 'Ubuntu', sans-serif;
     font-size: 2em;
-    /*font-size: larger;*/
     text-transform: uppercase;
     color: rgb(255,255,255);
     padding-bottom: 1em;
@@ -95,10 +124,10 @@ footer{
     width:100%;
 }
 
-footer > *
+footer  ul
 {
-    padding: 2em;
-    background-color: #444444;
+    padding: 1em;
+    /*background-color: #444444;*/
 }
 
 .bkg_container
@@ -108,11 +137,10 @@ footer > *
 }
 main figure img
 {
-
     width: 300%;
     transform: translate( -25%, 0% );
-
 }
+
 figure
 {
     overflow: hidden;
@@ -122,11 +150,8 @@ main section /*place the content centered respect to the image*/
 {
     position: absolute;
     top: 0%;
-    /*left: 50%;*/
     width: 100%;
-    /*transform: translate( -50%, -50% );*/
     padding: 2em;
-    /*gap: 5em;*/
     background-image: linear-gradient( rgba(0,0,0,0.4), rgba(0,0,0,0.4),rgba(0,0,0,0));
 }
 
@@ -138,8 +163,6 @@ figure img
 {
     width: 200%;
     transform: translate( -25%, 0% );
-    /*max-width: 800px;*/
-    /*min-width: 400px;*/
 }
 article
 {
@@ -149,63 +172,47 @@ article
 
 article div, aside div
 {
-    /*line-height: 2em;*/
     position: absolute;
     top: 0%;
-    /*left: 50%;*/
-    /*width: 80%;*/
-    /*transform: translate( -50%, -50% );*/
     overflow: auto;
-    /*padding-top: 3em;*/
     padding: 2em 2em;
-    /*gap:3em;*/
     background-image: linear-gradient( rgba(0,0,0,0.4), rgba(0,0,0,0.6),rgba(0,0,0,0));
 }
-
 
 #buy_tickets{
     display: none;
 }
-#buy_now div{
-    display: block;
-    position: static;
-}
 
-#navbar nav{
+#main_navbar nav{
     display: none;
+    padding: 1em;
+    line-height: 2em;
 }
 
-#navbar > label{
+#main_navbar > label{
 
     text-align: center;
-
     display: block;
     cursor: pointer;
     font-size:2em;
     color: white;
     float:right;
-    /*margin-right: 20px;*/
     position: relative;
 }
 #toggle:checked + nav{
     display: block;
-    /*font-size: 2em;*/
 }
 
 #toggle { display: none; }
 
 .find_more{
     display: block;
-    /*position: absolute;*/
     margin-top: 2em;
     padding:1em;
     background-color: rgba(255, 140, 0, 0.7);
-    /*opacity: 0.5%;*/
-    /*bottom:0%;*/
 }
 #tickets_aside
 {
-    /*background-color: rgba(255, 255, 255, 0.2);*/
     padding-bottom: 1em;
 }
 
@@ -215,17 +222,19 @@ article div, aside div
     margin-bottom: 1em;
 }
 
-#aside_section figure img
+#plan_your_vacation  img,
+#newsletter  img
 {
-    width: 300%;
+    width: 250%;
 }
 
-#follow_us_navbar img{
+
+#fnb_followus img{
     width: 48px;
     height:48px;
 
 }
-.flex_navbars li{
+.navbar li{
     line-height: 2em;
 
 }
@@ -255,17 +264,141 @@ article div, aside div
     filter: invert(90%);
 }
 #contactForm {
-    /*margin-left: 10%;*/
-    /*margin-right: 10%;*/
-    /*margin-bottom: 5%;*/
     background-color: rgb(100,100,100);
     padding: 5%;
     border-radius: 25px;
-
 }
 
 /*Attractions*/
 #vr_attractions header
 {
     padding: 2em;
+}
+#buy_now div{
+    display: block;
+    position: static;
+}
+
+
+
+@media only screen and (min-width: 1200px)
+{
+    body{ font-size: 1.3em;}
+
+    h1{
+        padding-bottom: 2em;
+    }
+
+
+    a{
+        font-size: 1.2em;
+    }
+
+
+    #main_navbar > label { display: none; }
+
+
+    .grid_container{
+        display: grid;
+        grid-template-areas:
+        'navbar navbar navbar navbar navbar navbar'
+        'main main main main main main'
+        'art_1 art_1 art_1 art_2 art_2 art_2'
+        'tkt tkt tkt tkt tkt tkt'
+        'art_3 art_3 art_4 art_4 art_5 art_5'
+        'art_6 art_6 art_7 art_7 art_8 art_8'
+        'aside_1 aside_1 aside_1 aside_2 aside_2 aside_2'
+        'footer footer footer footer footer footer '
+        ;
+        gap: 2em;
+    }
+    #main_navbar nav{
+        display: grid;
+
+        grid-template-columns: 1fr  1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        'mn_logo mn_ar mn_vr mn_other mn_search'
+        ;
+    }
+
+    figure img
+    {
+        width: 100%;
+        transform: translate( 0%, 0% );
+    }
+
+    main figure img
+    {
+        width: 100%;
+        transform: translate( 0%, 0% );
+    }
+
+
+
+    #tickets_aside ul{
+        display: grid;
+        gap: 1em;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+        grid-template-areas:
+            'adults years0-6 kids family carer groups'
+        ;
+    }
+
+
+
+    #footer_navbar{
+        display: grid;
+        grid-template-areas:
+            'fnb_1st fnb_2nd fnb_3rd'
+            'fnb_fus fnb_fus fnb_fus'
+            'fnb_crp fnb_crp fnb_crp';
+        row-gap: 2em;
+    }
+
+    #fnb_followus {
+        display: flex;
+        align-items: center;
+
+    }
+    #fnb_followus img{
+        width: 64px;
+        height: 64px;
+    }
+
+    #fnb_corp {
+        display:  flex;
+    }
+
+    main section /*place the content centered respect to the image*/
+    {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        width: 80%;
+        transform: translate( -50%, -50% );
+        padding: 3em;
+        background-image: linear-gradient( rgba(0,0,0,0.8), rgba(0,0,0,0.6),rgba(0,0,0,0));
+    }
+
+
+    .find_more{
+        display: inline-block;
+        padding: 0.8em 2em;
+        background-color: darkorange;
+        opacity: 0.8%;
+        width: 10em;
+    }
+    #buy_tickets{
+        display: inline-block;
+        width: 30%
+    }
+
+    #plan_your_vacation  img,
+    #newsletter  img
+    {
+        width: 100%;
+    }
+
+
+
 }

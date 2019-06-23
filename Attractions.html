@@ -10,45 +10,45 @@
         <link rel="stylesheet" href="css/stylesheet_grid.css">
     </head>
     <body>
-        <header id="navbar"><!-- The header contains the logo, the main navigation bar and the search bar -->
-            <label for="toggle">&#9776;</label>
-            <input type="checkbox" id="toggle" />
-            <nav class="flex_navbars"><!-- The main navigation bar. All the links to attractions bring to the attraction page, anchored in different places
+    <header id="main_navbar"><!-- The header contains the logo, the main navigation bar and the search bar -->
+        <label for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle" />
+        <nav class="grid_header_navbar"><!-- The main navigation bar. All the links to attractions bring to the attraction page, anchored in different places
                     Note that the "service" links, the last 5, do not land anywhere -->
-                <figure><!-- The logo -->
-                    <a href="index.html">
-                        <img id="logo" src="images/HP_ThemePark_logo.png" alt="Harry Potter Theme Park Logo"/>
-                    </a>
-                </figure>
-                <ul>
-                    <li><a href="Attractions.html#sec_platform">Platform 9 3/4 AR experience</a></li>
-                    <li><a href="Attractions.html#sec_ministry_of_magic">The Ministry of Magic AR experience</a></li>
-                    <li><a href="Attractions.html#sec_forbidden_forest">The Forbidden Forest AR experience</a></li>
-                    <li><a href="Attractions.html#sec_visit_hogwarts">Visit Hogwarts School AR experience</a></li>
-                    <li><a href="Attractions.html#sec_diagon_alley">A walk in Diagon Alley AR experience</a></li>
-                    <li><a href="Attractions.html#sec_magical_creatures_exhibition">Magical creatures exhibition AR experience</a></li>
-                </ul>
-                <ul>
-                    <li><a href="Attractions.html#sec_ride_a_broomstick">Ride a Broomstick VR experience</a></li>
-                    <li><a href="Attractions.html#sec_quidditch_match">Play Quidditch VR experience</a></li>
-                    <li><a href="Attractions.html#sec_visit_gringott">Visit Gringott's cave VR experience</a></li>
-                    <li><a href="Attractions.html#sec_find_the_horcruxes">Find the Horcruxes VR game</a></li>
-                </ul>
-                <ul>
-                    <li><a href="not_found.html">Plan your vacation</a></li>
-                    <li><a href="not_found.html">Stay the night</a></li>
-                    <li><a href="not_found.html">Tickets</a></li>
-                    <li><a href="not_found.html">Reservations</a></li>
-                    <li><a href="not_found.html">News</a></li>
-                </ul>
-                <div id="searchBar"><!-- Search Bar -->
-                    <label for="searchText" >Search the website</label>
-                    <input type="text" id="searchText" />
-                    <button id="search">Search</button>
-                </div>
-            </nav>
-        </header>
-        <main class="bkg_container"><!-- This block contains the main image and the title of the page -->
+            <figure id="fig_logo"><!-- The logo -->
+                <a href="index.html">
+                    <img id="logo" src="images/HP_ThemePark_logo.png" alt="Harry Potter Theme Park Logo"/>
+                </a>
+            </figure>
+            <ul id="main_navbar_ar">
+                <li><a href="Attractions.html#sec_platform">Platform 9 3/4 AR experience</a></li>
+                <li><a href="Attractions.html#sec_ministry_of_magic">The Ministry of Magic AR experience</a></li>
+                <li><a href="Attractions.html#sec_forbidden_forest">The Forbidden Forest AR experience</a></li>
+                <li><a href="Attractions.html#sec_visit_hogwarts">Visit Hogwarts School AR experience</a></li>
+                <li><a href="Attractions.html#sec_diagon_alley">A walk in Diagon Alley AR experience</a></li>
+                <li><a href="Attractions.html#sec_magical_creatures_exhibition">Magical creatures exhibition AR experience</a></li>
+            </ul>
+            <ul id="main_navbar_vr">
+                <li><a href="Attractions.html#sec_ride_a_broomstick">Ride a Broomstick VR experience</a></li>
+                <li><a href="Attractions.html#sec_quidditch_match">Play Quidditch VR experience</a></li>
+                <li><a href="Attractions.html#sec_visit_gringott">Visit Gringott's cave VR experience</a></li>
+                <li><a href="Attractions.html#sec_find_the_horcruxes">Find the Horcruxes VR game</a></li>
+            </ul>
+            <ul id="main_navbar_other">
+                <li><a href="not_found.html">Plan your vacation</a></li>
+                <li><a href="not_found.html">Stay the night</a></li>
+                <li><a href="not_found.html">Tickets</a></li>
+                <li><a href="not_found.html">Reservations</a></li>
+                <li><a href="not_found.html">News</a></li>
+            </ul>
+            <div id="searchBar"><!-- Search Bar -->
+                <label for="searchText" >Search the website</label>
+                <input type="text" id="searchText" />
+                <button id="search">&#128269; </button>
+            </div>
+        </nav>
+    </header>
+    <main class="bkg_container"><!-- This block contains the main image and the title of the page -->
             <figure>
                 <img src="images/home_main_2.jpg" alt="Photo of Harry, Hermione, Ron and Sirius Black" />
             </figure>
@@ -230,45 +230,38 @@
                 </div>
             </article>
         </div>
-        <footer><!-- footer of the page containing the footer navbar, the Follow us section and other links-->
-            <nav id="footer_navbar" class="flex_navbars"><!-- Secondary navigation bar -->
-                <ul class="">
-                    <li><a href="not_found.html">Where we are</a></li>
-                    <li><a href="not_found.html">How to get here</a></li>
-                    <li><a href="not_found.html">Opening times</a></li>
-                </ul>
-                <ul class="">
-                    <li><a href="not_found.html">When you arrive</a></li>
-                    <li><a href="not_found.html">Facilities</a></li>
-                    <li><a href="not_found.html">FAQ</a></li>
-                </ul>
-                <ul class="">
-                    <li><a href="contactUs.html">Contact us</a></li>
-                    <li><a href="not_found.html">Partnership (Schools)</a></li>
-                    <li><a href="not_found.html">Private events</a></li>
-                    <li><a href="not_found.html">Additional needs</a></li>
-                </ul>
-            </nav>
-            <div id="follow_us"> <!-- Follow us section-->
-
-                <nav id="follow_us_navbar">
-                    <ul class="flex_navbars">
-                        <li><h5>Follow us:</h5></li>
-                        <li><a href="http://www.facebook.com"><img src="images/follow_us_facebook.svg" width="64px" height="64px" alt="Follow us on Facebook" /></a></li>
-                        <li><a href="http://www.twitter.com"><img src="images/follow_us_twitter.svg" height="64px" width="64px" alt="Follow us on Twitter" /></a></li>
-                        <li><a href="http://www.instagram.com"><img src="images/follow_us_instagram.svg" height="64px" width="64px" alt="Follow us on Instagram" /></a></li>
-                        <li><a href="http://www.youtube.com"><img src="images/follow_us_youtube.svg" height="64px" width="64px" alt="Follow us on Youtube" /></a></li>
-                        <li><a href="http://www.instagram.com"><img src="images/follow_us_tripadvisor.svg" height="64px" width="64px" alt="Follow us on TripAdvisor" /></a></li>
-                    </ul>
-                </nav>
-            </div>
-            <nav id="corporate_links_navbar"><!-- Tertiary Navigation bar-->
-                <ul class="flex_navbars">
-                    <li><a href="not_found.html">Privacy Policy</a></li>
-                    <li><a href="not_found.html">Terms and Conditions</a></li>
-                    <li><a href="not_found.html">Work for us</a></li>
-                </ul>
-            </nav>
-        </footer>
+    <footer id="footer"><!-- footer of the page containing the footer navbar, the Follow us section and other links-->
+        <nav id="footer_navbar" class="navbar"><!-- Secondary navigation bar -->
+            <ul id="fnb_1st">
+                <li><a href="not_found.html">Where we are</a></li>
+                <li><a href="not_found.html">How to get here</a></li>
+                <li><a href="not_found.html">Opening times</a></li>
+            </ul>
+            <ul id="fnb_2nd">
+                <li><a href="not_found.html">When you arrive</a></li>
+                <li><a href="not_found.html">Facilities</a></li>
+                <li><a href="not_found.html">FAQ</a></li>
+            </ul>
+            <ul id="fnb_3rd">
+                <li><a href="contactUs.html">Contact us</a></li>
+                <li><a href="not_found.html">Partnership (Schools)</a></li>
+                <li><a href="not_found.html">Private events</a></li>
+                <li><a href="not_found.html">Additional needs</a></li>
+            </ul>
+            <ul id="fnb_followus">
+                <li><h5>Follow us:</h5></li>
+                <li><a href="http://www.facebook.com"><img src="images/follow_us_facebook.svg" width="64" height="64" alt="Follow us on Facebook" /></a></li>
+                <li><a href="http://www.twitter.com"><img src="images/follow_us_twitter.svg" height="64" width="64" alt="Follow us on Twitter" /></a></li>
+                <li><a href="http://www.instagram.com"><img src="images/follow_us_instagram.svg" height="64" width="64" alt="Follow us on Instagram" /></a></li>
+                <li><a href="http://www.youtube.com"><img src="images/follow_us_youtube.svg" height="64" width="64" alt="Follow us on Youtube" /></a></li>
+                <li><a href="http://www.instagram.com"><img src="images/follow_us_tripadvisor.svg" height="64" width="64" alt="Follow us on TripAdvisor" /></a></li>
+            </ul>
+            <ul id="fnb_corp">
+                <li><a href="not_found.html">Privacy Policy</a></li>
+                <li><a href="not_found.html">Terms and Conditions</a></li>
+                <li><a href="not_found.html">Work for us</a></li>
+            </ul>
+        </nav>
+    </footer>
     </body>
 </html>
