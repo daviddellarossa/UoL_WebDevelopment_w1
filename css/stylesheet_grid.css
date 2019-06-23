@@ -280,6 +280,8 @@ article div, aside div
 }
 
 
+.grow, .find_more{ transition: all .2s ease-in-out; }
+.grow:hover,.find_more:hover  { transform: scale(1.2); }
 
 @media only screen and (min-width: 1200px)
 {
