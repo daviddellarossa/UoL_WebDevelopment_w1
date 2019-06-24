@@ -1,26 +1,51 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed&display=swap');
 
+/*<common>*/
+/*<header>*/
 #fig_logo{ grid-area: mn_logo; }
 #main_navbar_ar { grid-area: mn_ar; }
 #main_navbar_vr {grid-area: mn_vr; }
 #main_navbar_other { grid-area: mn_other; }
 #searchBar { grid-area: mn_search; }
-
 #main_navbar { grid-area: navbar}
+/*<header />*/
+
+/*<main>*/
 #main_section { grid-area: main; }
-#sec_ar_hogwarts_school { grid-area: art_1; }
-#sec_vr_gringotts_cave { grid-area: art_2; }
+/*<main />*/
+
+/*<articles>*/
+#art_vr_attractions { grid-area: art_vr}
+#art_ar_attractions { grid-area: art_ar}
+#art_hogwarts_school { grid-area: art_1; }
+#art_visit_gringott { grid-area: art_2; }
 #tickets_aside { grid-area: tkt; }
-#sec_vr_ride_a_broomstick { grid-area: art_3; }
-#sec_ar_forbidden_forest { grid-area: art_4; }
-#sec_vr_quidditch_match { grid-area: art_5; }
-#sec_ar_diagon_alley { grid-area: art_6; }
-#sec_vr_find_the_horcruxes { grid-area: art_7; }
-#sec_ar_magical_creatures { grid-area: art_8; }
+#art_ride_a_broomstick { grid-area: art_3; }
+#art_forbidden_forest { grid-area: art_4; }
+#art_quidditch_match { grid-area: art_5; }
+#art_diagon_alley { grid-area: art_6; }
+#art_find_the_horcruxes { grid-area: art_7; }
+#art_magical_creatures { grid-area: art_8; }
+#art_platform { grid-area: art_9; }
+#art_ministry_of_magic { grid-area: art_10; }
+
 #plan_your_vacation { grid-area: aside_1; }
 #newsletter { grid-area: aside_2; }
 #footer {grid-area: footer}
+/*<articles />*/
+
+/*footer*/
+#fnb_1st { grid-area: fnb_1st; }
+#fnb_2nd { grid-area: fnb_2nd; }
+#fnb_3rd { grid-area: fnb_3rd; }
+#fnb_followus { grid-area: fnb_fus; }
+#fnb_corp { grid-area: fnb_crp; }
+
+/*<common />*/
+
+/*<home page>*/
+
 
 /*tickets*/
 #adults { grid-area: adults; }
@@ -30,12 +55,16 @@
 #carer { grid-area: carer; }
 #groups { grid-area: groups; }
 
-/*footer*/
-#fnb_1st { grid-area: fnb_1st; }
-#fnb_2nd { grid-area: fnb_2nd; }
-#fnb_3rd { grid-area: fnb_3rd; }
-#fnb_followus { grid-area: fnb_fus; }
-#fnb_corp { grid-area: fnb_crp; }
+/*<home page /> */
+
+/*<attractions>*/
+
+#buy_now { grid-area: buy_now; }
+
+
+/*<attractions />*/
+
+
 
 
 
@@ -274,10 +303,14 @@ article div, aside div
 {
     padding: 2em;
 }
-#buy_now div{
-    display: block;
-    position: static;
+#buy_now {
+    /*display: block;*/
+    /*position: static;*/
+    width: 100%;
+
 }
+
+
 
 
 .grow, .find_more{ transition: all .2s ease-in-out; }
@@ -316,7 +349,6 @@ article div, aside div
     }
     #main_navbar nav{
         display: grid;
-
         grid-template-columns: 1fr  1fr 1fr 1fr 1fr;
         grid-template-areas:
         'mn_logo mn_ar mn_vr mn_other mn_search'
@@ -402,5 +434,22 @@ article div, aside div
     }
 
 
+    .grid_container_attractions {
+        display: grid;
+        grid-template-areas:
+                'navbar navbar navbar navbar navbar navbar'
+                'main main main main main main'
+                'art_vr art_vr art_vr art_vr art_vr art_vr'
+                'art_3 art_3 art_3 art_5 art_5 art_5'
+                'art_2 art_2 art_2 art_7 art_7 art_7'
+                '. . buy_now buy_now . .'
+                'art_ar art_ar art_ar art_ar art_ar art_ar'
+                'art_9 art_9 art_9 art_10 art_10 art_10'
+                'art_4 art_4 art_4 art_8 art_8 art_8'
+                'art_1 art_1 art_1 art_6 art_6 art_6'
+                'footer footer footer footer footer footer ';
+        /*grid-template-rows: 1fr 1fr 1fr 1fr 1fr 0.2fr 1fr 1fr 1fr 1fr 1fr ;*/
+        gap: 2em;
 
+    }
 }
