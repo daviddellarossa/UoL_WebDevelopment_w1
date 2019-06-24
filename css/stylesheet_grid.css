@@ -61,8 +61,16 @@
 
 #buy_now { grid-area: buy_now; }
 
-
 /*<attractions />*/
+
+/*<contactUs>*/
+
+#by_post { grid-area: by_post; }
+#by_phone { grid-area: by_phone; }
+#faq { grid-area: faq; }
+#contactForm { grid-area: contactForm; }
+
+/*<contactUs />*/
 
 
 
@@ -304,10 +312,7 @@ article div, aside div
     padding: 2em;
 }
 #buy_now {
-    /*display: block;*/
-    /*position: static;*/
     width: 100%;
-
 }
 
 
@@ -451,5 +456,18 @@ article div, aside div
         /*grid-template-rows: 1fr 1fr 1fr 1fr 1fr 0.2fr 1fr 1fr 1fr 1fr 1fr ;*/
         gap: 2em;
 
+    }
+
+    .grid_container_contactus
+    {
+        display: grid;
+        grid-template-areas:
+        'navbar navbar navbar navbar navbar navbar'
+        'main main main main main main'
+        'by_post by_post by_phone by_phone faq faq'
+        'contactForm contactForm contactForm contactForm contactForm contactForm'
+        'footer footer footer footer footer footer '
+        ;
+        gap: 2em;
     }
 }
