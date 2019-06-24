@@ -453,7 +453,6 @@ article div, aside div
                 'art_4 art_4 art_4 art_8 art_8 art_8'
                 'art_1 art_1 art_1 art_6 art_6 art_6'
                 'footer footer footer footer footer footer ';
-        /*grid-template-rows: 1fr 1fr 1fr 1fr 1fr 0.2fr 1fr 1fr 1fr 1fr 1fr ;*/
         gap: 2em;
 
     }
